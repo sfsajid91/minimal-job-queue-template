@@ -1,0 +1,9 @@
+-- CreateTable
+CREATE TABLE "Job" (
+    "id" TEXT NOT NULL PRIMARY KEY,
+    "url" TEXT NOT NULL,
+    "state" TEXT NOT NULL DEFAULT 'PENDING',
+    "data" TEXT,
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" DATETIME NOT NULL
+);
